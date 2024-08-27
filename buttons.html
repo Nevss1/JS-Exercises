@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Variables</title>
+    </head>
+    <body>
+        <button onclick="console.log('Cart quantity: ' + saldo);">
+            Show Quantity
+        </button>
+        <button onclick="
+            saldo = saldo + 1;
+            console.log('Cart quantity: ' + saldo);
+            ">
+            Add to Cart
+        </button>
+        <button onclick="
+            saldo = saldo + 2;
+            console.log('Cart quantity: ' + saldo);
+            ">
+            +2
+        </button>
+        <button onclick="
+           saldo = saldo + 3;
+           console.log('Cart quantity: ' + saldo);
+        ">
+            +3
+        </button>
+        <button onclick="
+           saldo = 0;
+           console.log('Cart was reset.')
+           console.log('Cart quantity: ' + 0)">
+            Reset Cart
+        </button>
+        <script>
+            let saldo = 0
+        </script>
+    </body>
+</html>
