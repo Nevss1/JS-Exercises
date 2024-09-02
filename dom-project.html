@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM</title>
+        <style>
+
+
+        </style>
+    </head>
+    <body>
+        <p>
+            Youtube subscribe button
+        </p>
+        <button onclick="
+            document.querySelector('button').innerHTML = 'Subscribed'
+        ">
+        Subscribe</button>
+        <p>Rock Paper Scissors</p>
+        <a href="http://127.0.0.1:5500/Jokenpo.html">
+            <p>Click Here</p>
+        </a>
+        <div style="margin-top: 50px;">
+            <p>
+                Amazon Shipping Calculator
+            </p>
+            <p>
+                Orders under $40 = +$10 Shipping
+            </p>
+            <p>
+                Orders over $40 = FREE Shipping
+            </p> 
+            <input type="text" id="price" placeholder="Cost of order">
+            <button class="calculator" onclick="
+                order = document.getElementById('price');
+                costOrder = Number(order.value);
+                finalCost = Number(costOrder);
+                console.log(typeof costOrder)
+                if (costOrder < 40) {
+                    finalCost += 10;
+                }
+                orderDiv = document.createElement('div');
+                orderDiv.appendChild(document.createTextNode(`$${finalCost}`));
+                currentDiv = document.getElementById('div1');
+                document.body.insertBefore(orderDiv, currentDiv);
+            
+            ">
+            Calculate</button>
+        </div>
+        <div id="div1"></div>
+        <script>
+            let order;
+            let costOrder;
+            let finalCost;
+            let orderDiv;
+            let currentDiv;
+            
+        </script>
+    </body>
+</html>

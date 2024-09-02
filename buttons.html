@@ -8,19 +8,19 @@
             Show Quantity
         </button>
         <button onclick="
-            saldo = saldo + 1;
+            saldo ++;
             console.log('Cart quantity: ' + saldo);
             ">
             Add to Cart
         </button>
         <button onclick="
-            saldo = saldo + 2;
+            saldo += 2;
             console.log('Cart quantity: ' + saldo);
             ">
             +2
         </button>
         <button onclick="
-           saldo = saldo + 3;
+           saldo += 3;
            console.log('Cart quantity: ' + saldo);
         ">
             +3
@@ -31,8 +31,8 @@
            console.log('Cart quantity: ' + 0)">
             Reset Cart
         </button>
-        <script src="buttons.js">
-            
+        <script>
+            let saldo = 0;
         </script>
     </body>
 </html>
